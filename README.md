@@ -1,3 +1,1 @@
-# Rock Paper Scissors Java Game
-
-just challenge
+# Rock Paper Scissors
