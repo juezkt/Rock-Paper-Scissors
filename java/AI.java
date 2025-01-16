@@ -4,8 +4,7 @@ public class AI {
 
   private static AI instance;
 
-  public AI() {
-    instance = this;
+  private AI() {
   }
 
   public static AI getInstance() {
