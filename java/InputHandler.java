@@ -9,48 +9,36 @@ public class InputHandler {
 
   public String getResult() {
     if (userInput == Keys.PAPER && aiInput == Keys.PAPER) {
-      return declareDraw();
+      return Strings.TIE;
     } else if (userInput == Keys.ROCK && aiInput == Keys.ROCK) {
-      return declareDraw();
+      return Strings.TIE;
     } else if (userInput == Keys.SCISSORS && aiInput == Keys.SCISSORS) {
-      return declareDraw();
+      return Strings.TIE;
     } else if (userInput == Keys.PAPER && aiInput == Keys.ROCK) {
-      return declareAiWin();
+      return Strings.AI_WIN;
     } else if (userInput == Keys.PAPER && aiInput == Keys.SCISSORS) {
-      return declareUserWin();
+      return Strings.USER_WIN;
     } else if (userInput == Keys.ROCK && aiInput == Keys.PAPER) {
-      return declareAiWin();
+      return Strings.AI_WIN;
     } else if (userInput == Keys.ROCK && aiInput == Keys.SCISSORS) {
-      return declareUserWin();
+      return Strings.USER_WIN;
     } else if (userInput == Keys.SCISSORS && aiInput == Keys.PAPER) {
-      return declareUserWin();
+      return Strings.USER_WIN;
     } else if (userInput == Keys.SCISSORS && aiInput == Keys.ROCK) {
-      return declareAiWin();
+      return Strings.AI_WIN;
     }
-    return "Invalid";
+    return Strings.INVALID;
   }
 
   public static final String getInputString(final int input) {
     switch (input) {
       case Keys.ROCK:
-        return "Rock";
+        return Strings.ROCK;
       case Keys.PAPER:
-        return "Paper";
+        return Strings.PAPER;
       case Keys.SCISSORS:
-        return "Scissors";
+        return Strings.SCISSORS;
     };
-    return "Invalid";
-  }
-
-  private String declareAiWin() {
-    return "Ai Win";
-  }
-
-  private String declareUserWin() {
-    return "User Win";
-  }
-
-  private static final String declareDraw() {
-    return "Draw";
+    return Strings.INVALID;
   }
 }
