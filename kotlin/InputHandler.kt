@@ -3,11 +3,7 @@ class InputHandler(
   private val aiInput: Int
 ) {
   fun getResult(): String {
-    return if (userInput == KEY_PAPER && aiInput == KEY_PAPER) {
-      STR_TIE
-    } else if (userInput == KEY_ROCK && aiInput == KEY_ROCK) {
-      STR_TIE
-    } else if (userInput == KEY_SCISSORS && aiInput == KEY_SCISSORS) {
+    return if (userInput == aiInput) {
       STR_TIE
     } else if (userInput == KEY_PAPER && aiInput == KEY_ROCK) {
       STR_AI_WIN

@@ -8,11 +8,7 @@ public class InputHandler {
   }
 
   public String getResult() {
-    if (userInput == Keys.PAPER && aiInput == Keys.PAPER) {
-      return Strings.TIE;
-    } else if (userInput == Keys.ROCK && aiInput == Keys.ROCK) {
-      return Strings.TIE;
-    } else if (userInput == Keys.SCISSORS && aiInput == Keys.SCISSORS) {
+    if (userInput == aiInput) {
       return Strings.TIE;
     } else if (userInput == Keys.PAPER && aiInput == Keys.ROCK) {
       return Strings.AI_WIN;
