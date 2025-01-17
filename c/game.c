@@ -23,20 +23,20 @@ void print_keys() {
   printf("%s: %i\n", STR_SCISSORS, SCISSORS);
 }
 
-const char *get_win_message(int userInput, int aiInput) {
-  if (userInput == aiInput) {
+const char *get_win_message(int user_input, int ai_input) {
+  if (user_input == ai_input) {
     return STR_TIE;
-  } else if (userInput == PAPER && aiInput == ROCK) {
+  } else if (user_input == PAPER && ai_input == ROCK) {
     return STR_AI_WIN;
-  } else if (userInput == PAPER && aiInput == SCISSORS) {
+  } else if (user_input == PAPER && ai_input == SCISSORS) {
     return STR_USER_WIN;
-  } else if (userInput == ROCK && aiInput == PAPER) {
+  } else if (user_input == ROCK && ai_input == PAPER) {
     return STR_AI_WIN;
-  } else if (userInput == ROCK && aiInput == SCISSORS) {
+  } else if (user_input == ROCK && ai_input == SCISSORS) {
     return STR_USER_WIN;
-  } else if (userInput == SCISSORS && aiInput == PAPER) {
+  } else if (user_input == SCISSORS && ai_input == PAPER) {
     return STR_USER_WIN;
-  } else if (userInput == SCISSORS && aiInput == ROCK) {
+  } else if (user_input == SCISSORS && ai_input == ROCK) {
     return STR_AI_WIN;
   }
   return STR_INVALID;

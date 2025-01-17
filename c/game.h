@@ -8,6 +8,6 @@ const char * handle_input(int input);
 void print_keys();
 
 /** returns who win **/
-const char * get_win_message(int iserInput, int aiInput);
+const char * get_win_message(int user_input, int ai_input);
 
 #endif
