@@ -1,29 +1,18 @@
 import java.util.Scanner;
 
 public class Main {
-  public static void main(String[] args) {
+  public static final void main(String[] args) {
     System.out.println(Strings.GAME_NAME);
-    System.out.print(Strings.TYPE_ONE_OF_THESES + ": \n" + getKeysMessage());
+    Game.printKeys();
+
     final Scanner input = new Scanner(System.in);
+
     final int userInput = input.nextInt();
-    final int aiInput = getAI().choose();
-    final InputHandler inputHandler = new InputHandler(userInput, aiInput);
-    System.out.println(Strings.USER_CHOICE + ": " + inputHandler.getInputString(userInput));
-    System.out.println(Strings.AI_CHOICE + ": " + inputHandler.getInputString(aiInput));
-    System.out.println(inputHandler.getResult());
-  }
+    final int aiInput = AI.choose();
 
-  private static final AI getAI() {
-    return AI.getInstance();
-  }
+    System.out.println(Strings.USER_CHOICE + ": " + Game.handleInput(userInput));
+    System.out.println(Strings.AI_CHOICE + ": " + Game.handleInput(aiInput));
 
-  private static final String getKeysMessage() {
-    final String message;
-    message = 
-      Strings.ROCK + ": " + Keys.ROCK + "\n" +
-      Strings.PAPER + ": " + Keys.PAPER + "\n" +
-      Strings.SCISSORS + ": " + Keys.SCISSORS
-      + "\n";
-    return message;
+    System.out.println(Game.getWinMessage(userInput, aiInput));
   }
 }

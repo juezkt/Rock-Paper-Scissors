@@ -1,4 +1,4 @@
-public class Strings {
+public final class Strings {
   public static final String GAME_NAME = "Rock-Paper-Scissors";
   public static final String INVALID = "Invalid";
   public static final String USER_WIN = "User Win";
