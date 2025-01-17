@@ -1,0 +1,3 @@
+val KEY_ROCK = 0
+val KEY_PAPER = 1
+val KEY_SCISSORS = 2
