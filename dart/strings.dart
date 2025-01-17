@@ -1,0 +1,10 @@
+const String STR_GAME_NAME = "Rock-Paper-Scissors";
+const String STR_ROCK = "Rock";
+const String STR_PAPER = "Paper";
+const String STR_SCISSORS = "Scissors";
+const String STR_INVALID = "Inconst Stringid";
+const String STR_USER_CHOICE = "User Choice";
+const String STR_AI_CHOICE = "AI Choice";
+const String STR_USER_WIN = "User Win";
+const String STR_AI_WIN = "AI Win";
+const String STR_TIE = "TIE";
