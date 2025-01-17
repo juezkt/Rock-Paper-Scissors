@@ -1,4 +1,4 @@
-class InputHandler(
+class Game(
   private val userInput: Int,
   private val aiInput: Int
 ) {

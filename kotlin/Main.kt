@@ -12,11 +12,11 @@ fun main(vararg args: String) {
   } catch (e: Exception) {
     KEY_ROCK
   }
-  val aiChoice = AI.getInstance().choose()
+  val aiChoice = AI.choose()
 
-  val inputHandler = InputHandler(userChoice, aiChoice)
-  println("$STR_USER_CHOICE: ${userChoice.toInputString()}")
-  println("$STR_AI_CHOICE: ${aiChoice.toInputString()}")
+  val inputHandler = Game(userChoice, aiChoice)
+  println("$STR_USER_CHOICE: ${userChoice.toHandledString()}")
+  println("$STR_AI_CHOICE: ${aiChoice.toHandledString()}")
 
   println(inputHandler.getResult())
 }

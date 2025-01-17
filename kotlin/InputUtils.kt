@@ -1,4 +1,4 @@
-fun Int.toInputString(): String {
+fun Int.toHandledString(): String {
   return when (this) {
     KEY_ROCK -> STR_ROCK
     KEY_PAPER -> STR_PAPER
