@@ -27,9 +27,9 @@ const char *get_win_message(int user_input, int ai_input) {
   if (user_input == ai_input) {
     return STR_TIE;
   } else if (user_input == PAPER && ai_input == ROCK) {
-    return STR_AI_WIN;
-  } else if (user_input == PAPER && ai_input == SCISSORS) {
     return STR_USER_WIN;
+  } else if (user_input == PAPER && ai_input == SCISSORS) {
+    return STR_AI_WIN;
   } else if (user_input == ROCK && ai_input == PAPER) {
     return STR_AI_WIN;
   } else if (user_input == ROCK && ai_input == SCISSORS) {

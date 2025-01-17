@@ -11,9 +11,9 @@ public class InputHandler {
     if (userInput == aiInput) {
       return Strings.TIE;
     } else if (userInput == Keys.PAPER && aiInput == Keys.ROCK) {
-      return Strings.AI_WIN;
-    } else if (userInput == Keys.PAPER && aiInput == Keys.SCISSORS) {
       return Strings.USER_WIN;
+    } else if (userInput == Keys.PAPER && aiInput == Keys.SCISSORS) {
+      return Strings.AI_WIN;
     } else if (userInput == Keys.ROCK && aiInput == Keys.PAPER) {
       return Strings.AI_WIN;
     } else if (userInput == Keys.ROCK && aiInput == Keys.SCISSORS) {
