@@ -1,0 +1,10 @@
+static const char *STR_GAME_NAME = "Rock-Paper-Scissors";
+static const char *STR_USER_CHOICE = "User Choice";
+static const char *STR_AI_CHOICE = "AI Choice";
+static const char *STR_TIE = "Tie";
+static const char *STR_AI_WIN = "AI Win";
+static const char *STR_USER_WIN = "User Win";
+static const char *STR_INVALID = "Invalid";
+static const char *STR_ROCK = "Rock";
+static const char *STR_PAPER = "Paper";
+static const char *STR_SCISSORS = "Scissors";

@@ -2,6 +2,6 @@
 #define AI_H_INCLUDED
 
 /** returns the AI choice */
-char * ai_choose();
+int ai_choose();
 
 #endif
